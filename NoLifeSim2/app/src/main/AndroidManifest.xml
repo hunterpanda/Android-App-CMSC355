@@ -10,10 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NoLifeSim">
         <activity
-            android:name=".MainActivity2"
+            android:name=".Roll"
+            android:exported="true" />
+        <activity
+            android:name=".Inventory"
+            android:exported="true" />
+        <activity
+            android:name=".LevelSelector"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".WELCOME"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

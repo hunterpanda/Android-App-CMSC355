@@ -7,11 +7,35 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="181dp"
-        android:text="Activity 2" />
+        android:layout_centerHorizontal="true"
+        android:text="UI SCREEN" />
+
+    <Button
+        android:id="@+id/buttonLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:text="open LEVEL Selector" />
+
+    <Button
+        android:id="@+id/buttonInventory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLevel"
+        android:layout_alignParentRight="true"
+        android:text="Inventory" />
+
+    <Button
+        android:id="@+id/buttonRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonInventory"
+        android:layout_alignParentRight="true"
+        android:text="Rolls" />
+
 
 </RelativeLayout>
