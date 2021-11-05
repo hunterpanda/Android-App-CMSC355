@@ -10,5 +10,6 @@ public class LevelSelector extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_level_selector);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 }
