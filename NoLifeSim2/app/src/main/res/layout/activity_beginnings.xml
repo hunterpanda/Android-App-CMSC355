@@ -4,20 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WELCOME">
+    tools:context=".Beginnings">
 
     <TextView
-        android:id="@+id/WelcomeView"
+        android:id="@+id/Level1_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Welcome to No Lives" />
-
-    <Button
-        android:id="@+id/buttonW"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/WelcomeView"
         android:layout_centerHorizontal="true"
-        android:text="Open" />
+        android:text="level1" />
 </RelativeLayout>

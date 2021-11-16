@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NoLifeSim">
         <activity
+            android:name=".Beginnings"
+            android:parentActivityName=".LevelSelector"
+            android:exported="true" />
+        <activity
             android:name=".Roll"
             android:parentActivityName=".MainActivity"
             android:exported="true" />
@@ -27,6 +31,7 @@
         <activity
             android:name=".WELCOME"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
