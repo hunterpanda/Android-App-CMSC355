@@ -67,6 +67,17 @@
             android:textSize="25sp"/>
 
     </RadioGroup>
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_marginTop="20dp"
+        android:text="NEXT"
+        android:textSize="20sp"
+        android:textColor="@color/white" />
+
+
 
 
 </RelativeLayout>
