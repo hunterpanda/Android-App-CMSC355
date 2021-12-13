@@ -1,6 +1,7 @@
 package com.example.nolifesim;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,10 +20,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button buttonLevel = findViewById(R.id.buttonLevel);
         Button buttonInventory = findViewById(R.id.buttonInventory);
         Button buttonRoll = findViewById(R.id.buttonRoll);
+        Button darkMode = findViewById(R.id.darkMode);
 
         buttonLevel.setOnClickListener(MainActivity.this);
         buttonInventory.setOnClickListener(MainActivity.this);
         buttonRoll.setOnClickListener(MainActivity.this);
+        darkMode.setOnClickListener(MainActivity.this);
     }
 
     @Override
@@ -43,6 +46,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent Roll = new Intent(this, Roll.class);
                 startActivity(Roll);
                 break;
+            case R.id.darkMode:
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+
         }
     }
 
