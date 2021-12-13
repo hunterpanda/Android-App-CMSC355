@@ -21,11 +21,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button buttonInventory = findViewById(R.id.buttonInventory);
         Button buttonRoll = findViewById(R.id.buttonRoll);
         Button darkMode = findViewById(R.id.darkMode);
+        Button lightMode = findViewById(R.id.lightMode);
 
         buttonLevel.setOnClickListener(MainActivity.this);
         buttonInventory.setOnClickListener(MainActivity.this);
         buttonRoll.setOnClickListener(MainActivity.this);
         darkMode.setOnClickListener(MainActivity.this);
+        lightMode.setOnClickListener(MainActivity.this);
     }
 
     @Override
@@ -48,7 +50,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.darkMode:
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-
+                break;
+            case R.id.lightMode:
+               AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+               break;
         }
     }
 
