@@ -47,7 +47,7 @@ public class LevelSelector extends AppCompatActivity implements View.OnClickList
             case R.id.level1:
                 Toast.makeText(LevelSelector.this, "Beginning", Toast.LENGTH_SHORT).show();
                 first = true;
-                Intent firstlevel = new Intent(this, Beginnings.class);
+                Intent firstlevel = new Intent(this, GameActivity.class);
                 startActivity(firstlevel);
                 break;
             case R.id.level2:

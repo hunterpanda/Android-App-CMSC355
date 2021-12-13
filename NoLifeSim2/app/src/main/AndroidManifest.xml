@@ -10,6 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NoLifeSim">
         <activity
+            android:name=".GameActivity"
+            android:parentActivityName=".LevelSelector"
+            android:exported="true" />
+        <activity
             android:name=".SwitchCase"
             android:parentActivityName=".MainActivity"
             android:exported="true" />

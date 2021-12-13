@@ -3,18 +3,20 @@ package com.example.nolifesim;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-
+    MediaPlayer media;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
+        play();
 
         Button buttonLevel = findViewById(R.id.buttonLevel);
         Button buttonInventory = findViewById(R.id.buttonInventory);
@@ -44,6 +46,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(Roll);
                 break;
         }
+    }
+
+    public void play () {
+        if(media == null) {
+            media = MediaPlayer.create(this, R.raw.yoasobimix);
+        }
+
+        media.start();
     }
 
 }
