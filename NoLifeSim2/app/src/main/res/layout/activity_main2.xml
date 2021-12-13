@@ -36,6 +36,21 @@
         android:layout_below="@+id/buttonInventory"
         android:layout_alignParentRight="true"
         android:text="Rolls" />
+    <Button
+        android:id="@+id/darkMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonRoll"
+        android:layout_alignParentRight="true"
+        android:text="Dark Mode" />
+    <Button
+        android:id="@+id/lightMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/darkMode"
+        android:layout_alignParentRight="true"
+        android:text="Light Mode" />
+
 
 
 </RelativeLayout>

@@ -1,6 +1,7 @@
 package com.example.nolifesim;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
@@ -21,10 +22,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button buttonLevel = findViewById(R.id.buttonLevel);
         Button buttonInventory = findViewById(R.id.buttonInventory);
         Button buttonRoll = findViewById(R.id.buttonRoll);
+        Button darkMode = findViewById(R.id.darkMode);
+        Button lightMode = findViewById(R.id.lightMode);
 
         buttonLevel.setOnClickListener(MainActivity.this);
         buttonInventory.setOnClickListener(MainActivity.this);
         buttonRoll.setOnClickListener(MainActivity.this);
+        darkMode.setOnClickListener(MainActivity.this);
+        lightMode.setOnClickListener(MainActivity.this);
     }
 
     @Override
@@ -45,6 +50,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent Roll = new Intent(this, Roll.class);
                 startActivity(Roll);
                 break;
+            case R.id.darkMode:
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                break;
+            case R.id.lightMode:
+               AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+               break;
         }
     }
 
