@@ -8,10 +8,13 @@ import android.view.SurfaceView;
 public class Game extends SurfaceView implements Runnable{
     private Thread thread;
     private boolean isPlaying;
-    private int screenX, screenY;
+    private final int screenX;
+    private final int screenY;
     private Paint paint;
-    private float screenRatioX, screenRatioY;
-    private Background background1, background2;
+    private final float screenRatioX;
+    private final float screenRatioY;
+    private final Background background1;
+    private final Background background2;
 
     public Game(Context context,int screenX, int screenY) {
         super(context);
